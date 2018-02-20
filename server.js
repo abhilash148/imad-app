@@ -17,6 +17,10 @@ app.get('/article-one',function(req,res){
     res.send("this is article one");
 });
 
+app.get('/article-two',function(req,res){
+   res.send("article two is send"); 
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
